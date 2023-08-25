@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment page</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+  <script src="https://kit.fontawesome.com/0d69f46662.js" crossorigin="anonymous"></script>
+
+    <style>
+        
+         #deli_Vol {
+            width: 85%;
+            margin: 70px auto;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            
+        }
+
+        #deli_Vol>div:first-child {
+            width: 50%;
+            /* margin-top: -220px; */
+    
+        }
+
+        #deli_Vol>div:nth-child(2) {
+            width: 35%;
+            margin-top: -30px;
+        }
+
+        #deliverydetails {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            padding: 20px;
+        }
+
+        #deliverydetails>div>form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            /* width:50%; */
+        }
+
+        #deliverydetails>div>form > input {
+            width:90%;
+        }
+
+        #app_voch>div>input {
+            width: 93%;
+        }
+
+        #app_voch>div>button {
+            width: 100%;
+        }
+
+        #app_voch>div {
+            display:flex;
+            flex-direction: column;
+            /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            padding: 10px;
+            margin-bottom: 0px;
+            margin-top: -10px;
+        }
+       
+        #app_voch>h2{
+            margin-top: 30px;
+        }
+
+        #app_voch>div>input{
+            padding:10px;
+        } 
+        #app_voch>div>button {
+            padding: 5px;
+            width:100%;
+            background-color: black;
+            color: rgb(216, 207, 189);
+        }
+        #order_sum {
+            /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;  */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            display: flex;
+            gap:5px;
+        }
+        #order_sum>div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #btninp {
+            width: 100%;
+            background-color: black;
+            color: rgb(216, 207, 189);
+            padding: 5px;
+            font-size: larger;
+            /* border-radius: 8px; */
+            margin-top: 15px 0px;
+            margin: 20px -5px 5px -5px;
+        }
+        img {
+            width:30%;
+            
+        }
+        #orderSummary{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        max-height: 400px; /* Set the desired maximum height for vertical scrolling */
+        }
+        #orderSummary>div{
+            display: flex;
+            flex-direction: row;
+        }
+        #orderSummary>div>div{
+            display:flex;
+            flex-direction: column;
+        }
+        #orderSummaryBox{
+            display:flex;
+            flex-direction: column;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        #orderSummaryBox>div{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding:10px;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="navbar-container">
+        <header class="page-header">
+            <div class="header-container">
+                <div class="Full-header">
+                    <div class="logo-container">
+                        <div class="logo-container-box">
+                            <a class="logo" href="index.html">
+                                <img src="https://www.bialetti.com/media/logo/default/5-layers_3x.png" alt="Bialetti">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-container">
+                        <div class="Header-menu">
+                            <a class="menu-name" href="#">MOKA EXPRESS</a>
+                        </div>
+                        <div class="Header-menu">
+                            <a class="menu-name" href="#">BIALETTI COFFEE ROASTING</a>
+                        </div>
+                        <div class="Header-menu dropdown">
+                        <a href="./product.html">
+                            <button class="dropbtn">PRODUCTS
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                        </a>
+                              <div class="dropdown-content">
+                                <div class="row">
+                                  <div class="column">
+                                    
+                                    <h3 class="column-h3">COFFEE</h3>
+                                    <a href="#">Grounds</a>
+                                    <a href="#">Coffee beans</a>
+                                  </div>
+                                  <div class="column">
+                                    <div class="vl"></div>
+                                    <h3 class="column-h3">COFFEE MAKERS</h3>
+                                    <a href="#">Aluminium coffee makers</a>
+                                    <a href="#">Stainless steal coffee makers</a>
+                                    <a href="#">Special coffee makers</a>
+                                  </div>
+                                  <div class="column">
+                                    <div class="vl"></div>
+                                    <h3 class="column-h3">ACCESSORIES</h3>
+                                    <a href="#">Small cups and mugs</a>
+                                    <a href="#">Coffee accessories</a>
+                                    <a href="#">Spare Parts</a>
+                                  </div>
+                                  <div class="column">
+                                    <div class="vl"></div>
+                                    <img class="column-img" src="https://www.bialetti.com/media/wysiwyg/moka-express-menu.jpg" alt="Coffee">
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="Header-menu dropdown">
+                            <button class="dropbtn">NEWS
+                                <i class="fa-solid fa-angle-down" id="fa-down"></i>
+                              </button>
+                              <div class="dropdown-content-2">
+                                <div class="column-2">
+                                    <a href="#">Small cups and mugs</a>
+                                    <a href="#">Coffee accessories</a>
+                                  </div>
+                                
+                              </div>
+                        </div>
+                        <div class="Header-menu">
+                            <a class="menu-name" href="#">INSPIRATION</a>
+                        </div>
+                        <div class="Header-menu">
+                            <a class="menu-name" href="#">OUR HISTORY</a>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                       <button id="magniglass" >
+                        <a  href="#">
+                            <i  class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                       </button>
+                       <button onclick="document.getElementById('login-form').style.display='block'">
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                       </button>
+                       <button>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                       </button>
+                       <button id = "open" >
+                        <a href="#">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                       </button>
+                       <form id="search-bar" >
+                        <input type="text" id="search" placeholder="Search entire store here...">
+                       </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field' id='login-email' placeholder='Email Id' required >
+            <input type='password'class='input-field' id='login-pass' placeholder='Enter Password' required>
+            <span class='input-field-2' id="password-error" style="display:none;color:red;">Email and/or password incorrect.</span>
+            <input type='checkbox'class='check-box'><span>Remember Password</span>
+            <button type='submit'class='submit-btn'>Log in</button>
+         </form>
+         <form id='register' class='input-group-register'>
+             <input type='text' id="firstname" class='input-field'placeholder='First Name' required>
+             <input type='text' id="lastname" class='input-field'placeholder='Last Name ' required>
+             <input type='email'id="regisemail"  class='input-field'placeholder='Email Id' required>
+             <input type='password' id="resipass" class='input-field'placeholder='Enter Password' required>
+             <input type='password' id="resirepass" class='input-field'placeholder='Confirm Password'  required>
+             <input type='checkbox'class='check-box' required><span>I agree to the terms and conditions</span>
+             <span id="email-exists" class='input-field-2' style="display:none;"></span>
+                    <button type='submit'class='submit-btn'>Register</button>
+             </form>
+            </div>
+        </div>
+    </div>
+  <div id="deli_Vol">
+    <div id="deliverydetails">
+        <!-- <h2>Customer</h2> -->
+        <div>
+            <form id="payment-form">
+                <h2>CUSTOMER</h2>
+                <br/>
+                <input type="text" placeholder="Full Name" id="fullname">
+                <input type="text" placeholder="Mobile Number" id="mobile">
+
+                <h2>SHIPPING ADDRESS</h2>
+                <br/>
+                <input type="text" placeholder="Area" id="area">
+                <input type="text" placeholder="City" id="city">
+                <input type="text" placeholder="State" id="state">
+                <input type="number" placeholder="PinCode" id="pincode">
+
+                <h2>PAYMENT DETAILS</h2>
+                <br/>
+                <input type="number" placeholder="Card Number" id="card-number">
+                <input type="text" placeholder="Card Holder Name" id="name">
+                <input type="number" placeholder="CVV" id="cvv" required>
+                <input type="text" placeholder="01/29" id="expiry-date">
+            </form>
+            <br/>
+            <button type="submit" id="btninp" form="payment-form">PLACE ORDER</button>
+        </div>
+    </div>
+    <div id="app_voch">
+        <div>
+            <input type="text" placeholder="Gift card or discount code" id="promocode">
+            <br/>
+            <button onclick="applypromo()">APPLY</button>
+        </div>
+
+        <h2>ORDER SUMMARY</h2>
+        <div id="order_sum">
+            <div id="orderSummary"></div>
+            <div id='orderSummaryBox'>
+                <div>
+                    <p>Subtotal</p>
+                    <p id="subtotal">0</p>
+                </div>
+                <div>
+                    <p>Discount</p>
+                    <p class="after_promo_code_apply">0</p>
+                </div>
+                <div>
+                    <p>Shipping</p>
+                    <p id="shipping_chage_fix_to_5$">FREE</p>
+                </div>
+                <div>
+                    <p style="font-weight: bold;">Order Total</p>
+                    <p id="total_order_price">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+
+  <footer>
+    <div>
+        <div id="contact_container">
+        <div>
+            <div class="contact">
+                <img src="https://www.bialetti.com/media/wysiwyg/logo-footer_4x.png" alt="">
+
+                <p>The essence of <br>
+                    Italian coffee culture.</p>
+            </div>
+            <p>
+                <span id="address">
+                    Registered Office
+                </span>
+                <br>
+                25030 Coccaglio BS
+                <br>
+                Via Fogliano, 1
+                <br>
+                Italia
+            </p>
+
+            <button id="contact-btn">
+                <i class="fa-solid fa-pen"></i> 
+                CONTACT US
+            </button>
+
+        </div>
+        <div class="legal">
+            <h4><a href="">Legal</a>   </h4>
+            <ul>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and conditions</a></li>
+                <li><a href="">B2B</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <div class="footer-bottom">
+        <div>
+            <div class="tags">
+                <a href="">About Us</a>
+                <a href="">Our history</a>
+                <a href="">Work with us</a>
+            </div>
+            <div class="bottom-para">
+                <p>
+                    2021 © Bialetti Industrie S.p.A. / Cap. Soc. i.v. Euro 1.041.628,00 / Cod.Fisc., P.IVA e numero d’iscrizione al Registro delle Imprese di Brescia 03032320248
+    
+    
+                </p>
+            </div>
+        </div>
+        <div class="social-icons">
+
+            <a class="icons" href="https://www.facebook.com/Bialetti/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="icons" href="https://www.instagram.com/bialetti/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+    </div>
+</footer
+<script src="./js/navbar.js"></script>
+</body>
+</html>
+
+<script> 
+
+    // var totalcartprice = parseInt(50);
+
+    var totalcartprice = localStorage.getItem("subtotal");
+    var subtotal = document.getElementById("subtotal");
+    subtotal.textContent = "$"+ totalcartprice;
+
+    console.log(subtotal)
+
+    var form = document.getElementById("payment-form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var fullname = document.getElementById("fullname").value;
+        var mobile = document.getElementById("mobile").value;
+        var area = document.getElementById("area").value;
+        var city = document.getElementById("city").value;
+        var state = document.getElementById("state").value;
+        var pincode = document.getElementById("pincode").value;
+
+        if (fullname === "" || mobile == "" || area === "" || city === "" || state === "" || pincode === "") {
+            alert("Fill all input fields");
+            return false;
+        }
+
+        var cardNumber = document.getElementById("card-number").value;
+        var cvv = document.getElementById("cvv").value;
+        var expiryDate = document.getElementById("expiry-date").value;
+        var name = document.getElementById("name").value;
+
+        window.location.href = "paymentOtp.html";
+        return true;
+    });
+
+    function applypromo() {
+        var promocodeinput = document.getElementById("promocode").value;
+        var disc = 0;
+        if (promocodeinput === "masai30") {
+            disc = parseInt((totalcartprice * 30)/100);
+        }
+        document.querySelector(".after_promo_code_apply").textContent = "$ "+disc.toFixed(2);
+
+        var totalorderprice = parseInt(totalcartprice - disc);
+        document.getElementById("total_order_price").textContent = "$ " + totalorderprice.toFixed(2);
+    }
+
+const paymentOrderDiv = document.querySelector("#orderSummary");
+
+let id = localStorage.getItem("buyId")
+    getOrderData(id); 
+
+async function getOrderData(id) {
+    try {
+        const res = await fetch(`https://bialettiserver.onrender.com/products?id=${id}`);
+        const data = await res.json();
+        // console.log(data);
+        displayOrderData(data);
+    } catch (err) {
+        console.log("Error: fetching in order data");
+    }
+};
+
+const displayOrderData = (data) => {
+    var count=0;
+    var sum=0;
+    data.forEach(product => {
+        if(product.id === 1){
+            const orderDiv = document.createElement('div')
+            orderDiv.classList.add('order-container');
+
+            const image = document.createElement('img');
+            image.src = product.img1;
+        
+            const detailDiv = document.createElement('div')
+            const name = document.createElement('h2');
+            name.textContent = product.product_name;
+            detailDiv.appendChild(name);
+
+            const price = document.createElement('p');
+            price.textContent = `Price: $${product.price}`;
+            detailDiv.appendChild(price);
+
+            orderDiv.appendChild(image)
+            orderDiv.appendChild(detailDiv)
+
+            paymentOrderDiv.appendChild(orderDiv);
+        }
+    });
+    
+}
+    // Sliding Picture Function
+const orderSummary = document.querySelector("#orderSummary");
+
+const leftScroll = () => {
+    orderSummary.scrollBy(-200, 0);
+}
+
+const rightScroll = () => {
+    orderSummary.scrollBy(200, 0);
+}
+
+const upScroll = () => {
+    orderSummary.scrollBy(0, -200);
+}
+
+const downScroll = () => {
+    orderSummary.scrollBy(0, 200);
+}
+
+// window.leftScroll = leftScroll;
+// window.rightScroll = rightScroll;
+window.upScroll = upScroll;
+window.downScroll = downScroll;
+
+ 
+
+</script>

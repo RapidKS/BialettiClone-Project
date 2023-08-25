@@ -1,0 +1,370 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden;  */
+}
+
+.jay{
+  background-color: rgb(224,213,197);
+  font-family: Mostra Nuova;
+  
+}
+
+ 
+.slideshow {
+width: 100%;
+height: auto;
+color: red;
+}
+
+.image-container {
+display: flex;
+overflow: hidden;
+}
+
+.image-info {
+position: absolute;
+bottom: 150px;
+/* left: 100px;
+top: 200px; */
+padding: 10px;
+color: rgb(10, 10, 10);
+width: 100%;
+text-align: middle;
+}
+
+.image-name {
+margin: 0;
+}
+
+.read-more-button {
+margin-top: 10px;
+padding: 20px 20px;
+background-color: #f6f2f2;
+color: #000000;
+border: none;
+font-size: 14px;
+cursor: pointer;
+border-radius: 30px 30px 30px 30px;
+}
+
+.read-more-button:hover {
+background-color: rgb(8, 8, 8);
+color: #ffffff;
+}
+.image-container-2 {
+text-align: center;
+color: red;
+}
+
+#logo-image {
+padding-left: 8%;
+padding-top: 100px;
+}
+
+#since-year {
+padding-left: 8%;
+color: rgb(55, 53, 51);
+}
+
+#page-title {
+padding-left: 10%;
+padding-bottom: 40px;
+font-size: 70px;
+color: rgb(34, 14, 8);
+}
+#description-2{
+padding-left: 8%;
+padding-bottom: 40px;
+color: rgb(55, 53, 51);
+color: #000000;
+font-size: 15px;
+text-decoration: underline  rgb(104, 99, 91);
+}
+#description-2:hover{
+text-decoration: underline  rgb(11, 11, 11);
+}
+
+#logo-image2 {
+
+width: 46%;
+border-radius: 0px 0px 300px 0px;
+transition: transform 0.3s;
+
+}
+#logo-image2:hover {
+  transform: scale(1.2);
+  }
+
+#logo-image3 {
+width: 50%;
+border-radius: 300px 0px 0px 0px;
+height:100%;
+transition: transform 0.3s;
+}
+#logo-image3:hover {
+transform: scale(1.2);
+}
+.image-container-3 {
+  text-align: center;
+  margin-bottom: 10%;
+  display: flex;
+  position: relative;
+  transition: transform 0.3s;
+  overflow-y: hidden;
+
+  
+}
+.image-container-7 {
+  text-align: center;
+  margin-bottom: 10%;
+
+  
+}
+
+
+#page-title1 {
+  font-size: 50px;
+  color: #000;
+  margin-bottom: 25px;
+
+}
+
+#description-3 {
+  font-size: 20px;
+  color: #000;
+  margin-top: 0;
+
+}
+.read-more-button-1 {
+  margin-top: 10px;
+  padding: 20px 20px;
+  background-color: #f6f2f2;
+  color: #000000;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px 30px 30px 30px;
+}
+.read-more-button-1:hover {
+  background-color: rgb(8, 8, 8);
+  color: #ffffff;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    max-width: 80%;
+  }
+}
+.banner-container {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.banner-container::after {
+  content: "A Story Written Together";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding-bottom: 80px;
+  font-family: mostra nuova;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  padding-top: 50px;
+  font-family: mostra nuova;
+
+}
+.banner-text-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  padding-top: 100px;
+  font-family: mostra nuova;
+
+}
+
+.banner-button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 20px 20px;
+  background-color: #f6f2f2;
+  color: #000000;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px 30px 30px 30px;
+}
+.image-container-4{
+  flex-wrap: wrap;
+}
+.banner-button:hover {
+  background-color: rgb(135, 168, 183);
+  color: #ffffff;
+}
+
+
+#page-title2 {
+  font-size: 50px;
+  color: #000;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: #000;
+  padding-bottom: 50px;
+
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+  padding-bottom: 6px;
+  cursor: pointer;
+  fill: transparent;
+}
+.banner-container-2 {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.banner-container-2::after {
+  content: "Bialetti’s Coffee Roasting";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding-bottom: 80px;
+  font-family: mostra nuova;
+}
+.banner-text-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  padding-top: 50px;
+  font-family: mostra nuova;
+
+}
+.banner-text-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  padding-top: 100px;
+  font-family: mostra nuova;
+
+}
+
+.banner-button-2 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 20px 20px;
+  background-color: #f6f2f2;
+  color: #000000;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px 30px 30px 30px;
+}
+.banner-button-2:hover {
+  background-color: rgb(135, 168, 183);
+  color: #ffffff;
+}
+/* All responsive styles are here*/
+/* Add responsive styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-info {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .image-info h1 {
+    font-size: 24px;
+  }
+
+  .read-more-button {
+    margin-top: 20px;
+  }
+
+  #page-title {
+    font-size: 40px;
+  }
+
+  #description-2 {
+    font-size: 14px;
+  }
+
+  .banner-container::after {
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+
+  .banner-text {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+
+  .banner-text-1 {
+    font-size: 18px;
+    padding-top: 60px;
+  }
+
+  .banner-button {
+    top: 60%;
+  }
+
+  #page-title2 {
+    font-size: 30px;
+  }
+}
+
+/* Add responsive styles for screens smaller than 480px */

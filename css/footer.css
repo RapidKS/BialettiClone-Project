@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&family=Poppins:ital,wght@0,300;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    padding-top: 20px;
+    background-color: #f0eded;
+}
+
+#contact_container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+
+}
+  .contact{
+    display: flex;
+}
+.contact>img{
+    width: 34px;
+}
+.contact p, .legal h4 a {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600 ; 
+}
+.contact p{
+    margin: 9px;
+    
+}
+
+ h4 a ,.legal ul li a{
+    text-decoration: none;
+}
+.legal ul li a{
+    color: #220E08;
+    
+}
+
+.legal ul li{
+    list-style: none;
+}
+.contact, h4 a{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #220E08;
+}
+
+h4{
+    margin-bottom: 24px;
+}
+h4 a:hover,.legal ul li a:hover {
+    color: red;
+}
+.contact + p, .legal ul li a{
+
+    font-size: 14px;
+}
+ #address{
+    font-weight: bold;
+}
+
+#contact-btn{
+    padding: 15px;
+    font-size: 19px;
+    border-radius: 25px;
+    background: #220E08;;
+    color: white;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 10%;
+}
+#contact-btn:hover{
+    background-color: black;
+}
+
+.tags, .bottom-para{
+    padding: 20px;
+    /* margin-left: 16% ; */
+}
+.tags a{
+    padding: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #220E08;
+}
+.bottom-para{
+    padding-bottom: 30px;
+}
+
+.icons{
+    margin: 15px;
+    font-size: 25px;
+    border: solid 1px #9E958B;
+    border-radius: 50%;
+    fill: #000;
+    stroke: none;
+    padding: 14px;
+}
+.social-icons a{
+    color: black;
+}
+.social-icons :hover{
+    color: white;
+    background-color: black;
+}
+
+@media only screen and (max-width:768px){
+    #contact_container {
+        
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        /* margin-left: 16%; */
+    }
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+    }
+}

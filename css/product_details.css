@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&family=Poppins:ital,wght@0,300;1,200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#product_details{
+    display: flex;
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #f0eded;
+    padding-bottom: 20px;
+
+}
+
+#img_container{
+    width: 20%;
+    
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ 
+#img_show{
+    width: 40%;
+}
+.img_box li{
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.img_box li img{
+    border: 1.2px solid black;
+    cursor: pointer;
+    width:20%;
+    
+    
+}
+ 
+
+ul img{
+    width: 100%;
+}
+
+#about_product{
+    width: 40%;
+    margin-top: 2rem;
+    margin-right: 10rem;
+}
+
+.btns{
+    display: flex;
+   
+    margin-top: 30px;
+}
+
+.btn1, .btn2{
+    cursor: pointer;
+    cursor: pointer;
+    margin-right: 150px;
+    padding: 10px;
+    font-size: 17px;
+    background: transparent;
+    border: 2.2px solid #d5cccc;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+}
+.btn1, .btn2:hover{
+    border: 2.2px solid black;
+    background-color: red;
+    color: white;
+}
+.btn1:hover, .btn2{
+    font-weight: 600;
+    
+}
+
+.description{
+    word-spacing: 10px;
+    line-height: 1.2;
+    font-size: 1.125rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.intensity{
+    font-weight: 600;
+}
+
+.useBtns{
+    background-color: #efeded;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    text-align: center;
+    margin-top: -4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.useBtn1, .useBtn2{
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.useBtn1:hover, .useBtn2{
+    color: red;
+}
+.useBtn2:hover{
+    color: white;
+
+}
+
+#bottom_container{
+    display: flex;
+    background-color: #e0d5c5;
+    padding: 10%;
+}
+
+#bottom_container >img{
+    width: 60%;
+}
+#bottom_container>h1{
+    color: #b02418;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    word-spacing: 20px;
+    line-height: 1.2;
+}
